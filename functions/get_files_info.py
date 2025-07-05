@@ -1,8 +1,8 @@
 import os
 
 
-def get_files_info(working_directory, directory = None):
-    #directory = directory or "."
+def get_files_info(working_directory, directory = '.'):
+    directory = directory or "."
     file_list=[]
     working_directory_path = os.path.abspath(working_directory)
     dir_path = os.path.abspath(os.path.join(working_directory,directory or "."))
